@@ -17,6 +17,8 @@ jobs:
         with:
           record: true
           parallel: true
+          group: all-tests
+          tag: github-actions
           start: npm start
           wait-on: 'http://localhost:8080'
         env:
